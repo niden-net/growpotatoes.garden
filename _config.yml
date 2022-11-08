@@ -1,0 +1,96 @@
+name: growpotatoes.garden
+title: 'Sustainable Living, Faith, Family, Friends and Potatoes'
+tagline: Grow Potatoes
+description: 'Focus on the important things! Live your life to the fullest. Faith, family, friends and Grow Potatoes'
+author: Potato Grower
+keywords: 'sustainable living, living, debt free, financial tips, prepping tips, grow potatoes, important things in life'
+
+url: https://growpotatoes.garden
+logo: /assets/img/grow-potatoes.jpg
+
+#twitter:
+#  username:
+#  card: summary
+#
+#facebook:
+#  app_id:
+#  publisher:
+#  admins:
+
+social:
+  name: Grow Potatoes
+  links:
+    - https://t.me/grow_potatoes
+
+#webmaster_verifications:
+#  google: 1234
+#  bing: 1234
+#  alexa: 1234
+#  yandex: 1234
+#  baidu: 1234
+#  facebook: 1234
+
+locale: en_US
+
+paginate: 6
+paginate_path: '/page-:num'
+permalink: /post/:title/
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+  auto_ids: true
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+
+##  layouts:
+##    year: year-archive
+##    month: month-archive
+##    day: day-archive
+##    category: category-archive
+##    tag: tag-archive
+#  permalinks:
+#    year: '/archive/:year/'
+#    month: '/archive/:year/:month/'
+#    day: '/archive/:year/:month/:day/'
+#    tag: '/archive/tag/:name/'
+#    category: '/archive/category/:name/'
+
+include:
+  - _pages
+  - _redirects
+
+sass:
+  style: compressed # You might prefer to minify using :compressed
+
+# Exclude these files from your production _site
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - serve
+  - backup

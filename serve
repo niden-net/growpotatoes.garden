@@ -1,0 +1,8 @@
+#!/bin/bash
+
+docker run --rm \
+  --volume="$PWD:/srv/jekyll" \
+  --name growpotatoes-garden \
+  -it \
+  jekyll/jekyll:latest \
+  jekyll serve --verbose

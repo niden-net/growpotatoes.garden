@@ -1,0 +1,10 @@
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Tags
+                            </h4>
+                            {% assign tags = site.tags | sort %}
+                            {% for tag in tags %}
+                            <a class="btn btn-sm btn-outline-secondary mb-1"
+                               href="/tags#{{ tag[0] | replace: " ","-" }}">{{ tag[0] }}</a>
+                            {% endfor %}
+                        </div><!-- /.card -->

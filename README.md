@@ -1,2 +1,3 @@
-# growpotatoes.garden
-GrowPotatoes.Garden website
+### GrowPotatoes.Garden
+
+Engine behind the GrowPotatoes.Garden

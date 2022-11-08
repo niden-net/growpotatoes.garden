@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include meta.html %}
+</head>
+<body>
+
+<header>
+    {% include nav.html %}
+</header>
+
+<main class="main pt-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    {{ content }}
+                </div>
+            </div>
+
+            <div class="col-md-3 ml-auto">
+                <aside class="sidebar mb-4 card card-outline">
+                    {% include widget/about.html %}
+                    {% include widget/links.html %}
+                    {% include widget/categories.html %}
+                    {% include widget/tags.html %}
+                </aside>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% include footer.html %}
+
+<script src="/assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+    {% for page in site.pages %}
+    {% if page.layout == 'page' and page.permalink != '/404' %}
+    <li class="nav-item">
+        <a class="nav-link" href="{{ page.permalink }}">
+            {{ page.title }}
+        </a>
+    </li>
+    {% endif %}
+    {% endfor %}
